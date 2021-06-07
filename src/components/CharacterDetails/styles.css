@@ -1,0 +1,81 @@
+.character-info-details {
+    padding: 32px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.character-info-details header {
+    width: 100%;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.character-info-details header h1 {
+    margin-left: 16px;
+}
+.character-info-details h3 {
+    margin-bottom: 16px;
+}
+
+.character-info-details .character-info-column {
+    width: 48%;
+}
+
+.character-info-details .information-table {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+
+.character-info-details .information-table .information-table-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid var(--elevation-3);
+}
+
+.character-info-details .information-table .information-table-row p {
+    padding: 16px;
+}
+
+.character-info-details .information-table .information-table-row .row-header {
+    width: 200px;
+    background: var(--elevation-1);
+}
+
+.character-info-details .information-table .information-table-row .row-value {
+    flex: 1;
+}
+
+.character-info-details .movie-list {
+    padding: 0;
+}
+.character-info-details .movie-item {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.character-info-details .movie-item p {
+    display: inline-flex;
+    align-items: center;
+}
+
+.character-info-details .movie-item span {
+    font-size: 12px;
+    margin-right: 12px;
+}
+
+.character-info-details .movie-item + .movie-item {
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px solid #333;
+}

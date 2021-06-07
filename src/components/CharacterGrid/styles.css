@@ -1,0 +1,21 @@
+section.character-grid {
+    overflow: auto;
+    padding: 16px;
+    z-index: 1;
+}
+
+section.character-grid::-webkit-scrollbar {
+    width: 10px;
+}
+  
+section.character-grid::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+section.character-grid::-webkit-scrollbar-thumb {
+    background: var(--primary);
+}
+
+section.character-grid::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-dark);
+}
