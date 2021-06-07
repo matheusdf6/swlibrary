@@ -14,6 +14,8 @@ const find = async url => {
     return false;
 }
 
+const search = async term => send(`${config.API_URL}/people/?search=${term}`)
+
 const send = async url  => {
     try {
         const response = await fetch(url);
@@ -23,8 +25,10 @@ const send = async url  => {
     }
 }
 
+
 export const CharacterRepository = { 
     getAll,
     paginate,
-    find
+    find,
+    search
 }

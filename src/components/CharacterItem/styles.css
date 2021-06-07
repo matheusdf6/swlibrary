@@ -32,3 +32,10 @@ article.character-item a:hover,
 article.character-item a:visited:hover {
     filter: brightness(0.7);
 }
+
+@media (max-width: 800px) {
+    article.character-item a {
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+}

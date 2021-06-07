@@ -44,7 +44,7 @@ const CharacterDetails = ({ character  }) => {
     return ( 
         <div className="character-info-details">
             <header className="character-info-header">
-                <button className="secondary-button" onClick={ () => history.goBack() }>Voltar</button>
+                <button className="secondary-button" onClick={ () => history.goBack() }><span>Voltar</span></button>
                 <h1>{character.name}</h1>
             </header>
             <div className="character-info-column">

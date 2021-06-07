@@ -19,3 +19,9 @@ section.character-grid::-webkit-scrollbar-thumb {
 section.character-grid::-webkit-scrollbar-thumb:hover {
     background: var(--primary-dark);
 }
+
+@media (max-width: 800px) {
+    section.character-grid {
+        padding: 0;
+    }    
+}

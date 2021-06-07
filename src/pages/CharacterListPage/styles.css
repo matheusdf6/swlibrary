@@ -5,3 +5,11 @@
     grid-template-areas: "aside topbar" "aside grid";
     height: 100%;
 }
+
+@media (max-width: 800px) {
+    .character-list {
+        grid-template-rows: 50px 50px 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "aside" "topbar" "grid";
+    }
+}

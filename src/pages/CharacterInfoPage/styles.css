@@ -1,0 +1,27 @@
+.character-info {
+    background: var(--elevation-0);
+    overflow: auto;
+}
+
+
+.character-info::-webkit-scrollbar {
+    width: 10px;
+}
+  
+.character-info::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.character-info::-webkit-scrollbar-thumb {
+    background: var(--primary);
+}
+
+.character-info::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-dark);
+}
+
+@media (max-width: 800px) {
+    .character-info::-webkit-scrollbar {
+        width: 4px;
+    }    
+}

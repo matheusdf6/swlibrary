@@ -25,9 +25,8 @@
     line-height: 1.2;
 }
 
-.aside-filters .search-container,
-.aside-filters .radio-container {
-    margin-top: 24px;
+.aside-filters .search-container {
+    margin-top: 42px;
 }
 
 
@@ -39,50 +38,6 @@
     border: 0;
     border-bottom: 1px solid var(--primary);
     color: #cacaca;
-}
-
-.aside-filters .radio-input input[type="radio"] {
-    display: none;
-}
-
-.aside-filters .radio-input label {
-    position: relative;
-    padding-left: 36px;
-    cursor: pointer;
-}
-
-.aside-filters .radio-input label:after,
-.aside-filters .radio-input label:before {
-    content: "";
-    position: absolute;
-    display: block;
-    border-radius: 50%;
-    top: 50%;
-    left: 0;
-    box-sizing: border-box;
-}
-
-.aside-filters .radio-input label:after {
-    height: 24px;
-    width: 24px;    
-    background: transparent;
-    border: 1px solid var(--primary);
-    transform: translateY(-50%);
-}
-
-.aside-filters .radio-input label:before {
-    height: 12px;
-    width: 12px;  
-    background: transparent;  
-    transform: translate(6px, -50%);
-}
-
-.aside-filters .radio-input input:checked + label:before {
-    background: var(--primary);
-}
-
-.aside-filters .radio-input {
-    margin-top: 16px;
 }
 
 .aside-filters .aside-button {
@@ -102,4 +57,115 @@
 
 .aside-filters .aside-button:hover {
     filter: brightness(0.8);
+}
+
+.aside-filters .toogle-search,
+.aside-filters .toogle-search + label {
+    display: none;
+}
+
+.aside-filters .toogle-search + label {
+    width: 42px;
+    height: 42px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 50%;
+    background: var(--elevation-5);
+}
+
+.aside-filters .toogle-search + label img {
+    max-width: 24px;
+}
+
+.aside-filters .toogle-search + label:after,
+.aside-filters .toogle-search + label:before {
+    height: 3px;
+    width: 24px;
+    display: block;
+    background: var(--primary);
+    border-radius: 2px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.aside-filters .toogle-search + label:after {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.aside-filters .toogle-search + label:before {
+    transform: translate(-50%, -50%) rotate(135deg);
+}
+
+.aside-filters .toogle-search:checked + label:after,
+.aside-filters .toogle-search:checked + label:before {
+    content: "";
+}
+
+.aside-filters .toogle-search:checked + label img {
+    display: none;
+}
+
+
+@media (max-width: 800px) {
+    .aside-filters {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 0 16px;
+        box-sizing: border-box;
+        position: relative;
+    }
+    .aside-filters .aside-header {
+        text-align: center;
+        justify-content: center;
+    }
+    .aside-filters .aside-header img {
+        width: 32px;
+        height: 32px;
+    }
+    .aside-filters .aside-header h1 {
+        font-size: 20px;
+    }
+
+    .aside-filters .search-container {
+        margin-top: 8px;
+    }
+
+    .aside-filters .search-container h3 {
+        display: none;
+    }
+
+    .aside-filters .search-container {
+        margin: 0;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: calc(100% - 80px);
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 16px;
+        background: var(--elevation-2);
+        transform: translateX(-100%);
+        transition: 0.3s all ease-in-out;
+    }
+
+    .aside-filters .aside-button {
+        width: fit-content;
+        margin: 0;
+        font-size: 12px;
+        letter-spacing: normal;
+        padding: 0 8px;
+    }
+
+    .aside-filters .toogle-search + label {
+        display: inline-flex;
+    }
+    .aside-filters .toogle-search:checked ~ .search-container {
+        transform: translateX(0);
+    }
 }

@@ -43,6 +43,7 @@
 
 .character-info-details .information-table .information-table-row p {
     padding: 16px;
+    box-sizing: border-box;
 }
 
 .character-info-details .information-table .information-table-row .row-header {
@@ -78,4 +79,86 @@
     margin-top: 16px;
     padding-top: 16px;
     border-top: 1px solid #333;
+}
+
+@media (max-width: 1024px) {
+    .character-info-details .information-table .information-table-row .row-header {
+        width: 140px;
+    }
+}
+
+@media (max-width: 800px) {
+    .character-info-details .character-info-column {
+        width: 100%;
+    }
+
+    .character-info-details .character-info-column + .character-info-column {
+        margin-top: 32px;
+    }
+
+    .character-info-details .character-info-header button {
+        position: relative;
+    }
+
+    .character-info-details .character-info-header button span {
+        display: none;
+    }
+
+    .character-info-details .character-info-header button::after,
+    .character-info-details .character-info-header button:before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        display: block;
+        width: 10px;
+        height: 2px;
+        background: #cacaca;    
+        transform-origin: left;
+    }
+
+    .character-info-details .character-info-header button::after {
+        transform: translateX(-50%) rotate(45deg);
+    }
+
+    .character-info-details .character-info-header button::before {
+        transform: translateX(-50%) rotate(-45deg);
+    }
+
+    .character-info-details header h1 {
+        font-size: 20px
+    }
+
+    .character-info-details .information-table .information-table-row .row-header,
+    .character-info-details .information-table .information-table-row .row-data {
+        padding: 8px;
+    }
+
+    .character-info-details .information-table .information-table-row .row-header {
+        width: 140px;
+        font-size: 14px;
+    }
+
+    .character-info-details .movie-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }    
+
+    .character-info-details .movie-item p:first-of-type {
+        font-weight: bolder;
+    }
+
+    .character-info-details .movie-item p + p {
+        margin-top: 8px;
+    }
+}
+
+@media (max-width: 425px) {
+    .character-info-details .information-table .information-table-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .character-info-details .information-table .information-table-row .row-header {
+        width: 100%;
+    }
 }

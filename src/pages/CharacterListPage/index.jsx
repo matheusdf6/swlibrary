@@ -12,16 +12,29 @@ const CharacterList = () => {
     const [ previousLink, setPreviousLink ] = useState(null);
     const [ nextLink, setNextLink ] = useState(null);
     const [ resultsNumber, setResultsNumber ] = useState(0);
+    const [ loading, setLoading ] = useState(false);
 
     useEffect( () => {
-        const fecthCharacters = async () => {
-            const response = await CharacterRepository.getAll();
-            if( response ) {
-                updateCharacterList(response)
-            }
-        }
         fecthCharacters();
     }, [])
+
+    const fecthCharacters = async () => {
+        setLoading(true);
+        const response = await CharacterRepository.getAll();
+        setLoading(false);
+        if( response ) {
+            updateCharacterList(response)
+        }
+
+    }
+    const handleSearch = async term => {
+        setLoading(true);
+        const response = await CharacterRepository.search(term);
+        setLoading(false);
+        if( response ) {
+            updateCharacterList(response)
+        }    
+    }
 
     const updateCharacterList = response => {
         setCharacters(response.results)
@@ -31,9 +44,10 @@ const CharacterList = () => {
     }
 
     const paginate = url => async () => {
-        console.log(url)
         if( url != null ) {
+            setLoading(true);
             const response = await CharacterRepository.paginate(url);
+            setLoading(false);
             if( response ) {
                 updateCharacterList(response)
             }    
@@ -43,17 +57,18 @@ const CharacterList = () => {
     const handleNextPage = paginate(nextLink)
     const handlePreviousPage = paginate(previousLink)
 
-    const handleSearch = () => {}
+    const handleClean = () => fecthCharacters(); 
 
     return ( 
         <main className="character-list">
-            <AsideFilters onSearch={handleSearch}/>
+            <AsideFilters onSearch={handleSearch} clean={handleClean} />
             <TopBar count={resultsNumber} 
                     containsPrevious={ previousLink != null } 
                     containsNext={ nextLink != null }
                     OnNextPage={handleNextPage} 
-                    OnPreviousPage={handlePreviousPage} />
-            <CharacterGrid characters={characters} />
+                    OnPreviousPage={handlePreviousPage} 
+                    loading={loading}  />
+            <CharacterGrid characters={characters} loading={loading} />
         </main>
     );
 }

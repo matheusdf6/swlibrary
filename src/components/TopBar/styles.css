@@ -14,6 +14,63 @@
     margin: 0;
 }
 
+.top-bar .action-buttons {
+    display: flex;
+}
+
 .top-bar button {
     margin: 0 4px;
+}
+
+@media (max-width: 800px) {
+
+    .top-bar .previous-page,
+    .top-bar .next-page {
+        position: relative;
+    }
+
+    .top-bar .previous-page span,
+    .top-bar .next-page span {
+        display: none;
+    }
+
+    .top-bar .previous-page:after,
+    .top-bar .previous-page:before,
+    .top-bar .next-page::after,
+    .top-bar .next-page:before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        display: block;
+        width: 10px;
+        height: 2px;
+        background: #cacaca;    
+    }
+
+    .top-bar .previous-page:after,
+    .top-bar .previous-page:before {
+        transform-origin: left;
+    }
+
+    .top-bar .previous-page:after,
+    .top-bar .next-page:after {
+        transform: translateX(-50%) rotate(-45deg);
+    }
+
+    .top-bar .previous-page:before,
+    .top-bar .next-page:before {
+        transform: translateX(-50%) rotate(45deg);
+    }
+
+    .top-bar .next-page:after,
+    .top-bar .next-page:before {
+        transform-origin: right;
+    }
+
+}
+
+@media (max-width: 425px) {
+    .top-bar .result-information {
+        font-size: 12px;
+    }
 }

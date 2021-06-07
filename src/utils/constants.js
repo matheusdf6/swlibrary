@@ -1,6 +1,6 @@
 const prod = {
     API_URL: 'https://swapi.dev/api',
-    BASE_URL: '/swlibrary'
+    BASE_URL: '/'
 }
 
 const dev = {
