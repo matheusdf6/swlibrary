@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/swlibrary/static/css/main.e4adb350.chunk.css",
+    "main.js": "/swlibrary/static/js/main.a4cff0f9.chunk.js",
+    "main.js.map": "/swlibrary/static/js/main.a4cff0f9.chunk.js.map",
+    "runtime-main.js": "/swlibrary/static/js/runtime-main.3490b9c6.js",
+    "runtime-main.js.map": "/swlibrary/static/js/runtime-main.3490b9c6.js.map",
+    "static/js/2.06d0b7f9.chunk.js": "/swlibrary/static/js/2.06d0b7f9.chunk.js",
+    "static/js/2.06d0b7f9.chunk.js.map": "/swlibrary/static/js/2.06d0b7f9.chunk.js.map",
+    "static/js/3.512743d2.chunk.js": "/swlibrary/static/js/3.512743d2.chunk.js",
+    "static/js/3.512743d2.chunk.js.map": "/swlibrary/static/js/3.512743d2.chunk.js.map",
+    "index.html": "/swlibrary/index.html",
+    "static/css/main.e4adb350.chunk.css.map": "/swlibrary/static/css/main.e4adb350.chunk.css.map",
+    "static/js/2.06d0b7f9.chunk.js.LICENSE.txt": "/swlibrary/static/js/2.06d0b7f9.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/swlibrary/static/media/background.fb63479d.gif",
+    "static/media/darth-vader.defc5378.png": "/swlibrary/static/media/darth-vader.defc5378.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3490b9c6.js",
+    "static/js/2.06d0b7f9.chunk.js",
+    "static/css/main.e4adb350.chunk.css",
+    "static/js/main.a4cff0f9.chunk.js"
+  ]
+}
