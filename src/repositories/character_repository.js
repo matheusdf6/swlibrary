@@ -1,6 +1,6 @@
-import { API_URL } from "../utils/constants";
+import { config } from "../utils/constants";
 
-const getAll = async () => await send(`${API_URL}/people`)
+const getAll = async () => await send(`${config.API_URL}/people`)
 
 const paginate = async next => await send(next);
 
