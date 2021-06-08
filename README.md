@@ -1,6 +1,6 @@
 # Star Wars Library
 
-[Link para o projeto](https://facebook.github.io/create-react-app/docs/deployment)
+[Link para o projeto](https://matheusdf6.github.io/swlibrary/)
 
 Biblioteca de personagens de Star Wars, construído em React. Ele está separado em duas páginas: listagem de personagens com pesquisa por nome, e detalhes do personagem
 
