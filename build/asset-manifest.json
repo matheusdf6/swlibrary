@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.2a448a7d.chunk.css",
-    "main.js": "/static/js/main.52154349.chunk.js",
-    "main.js.map": "/static/js/main.52154349.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.76220c52.js",
-    "runtime-main.js.map": "/static/js/runtime-main.76220c52.js.map",
-    "static/js/2.14863830.chunk.js": "/static/js/2.14863830.chunk.js",
-    "static/js/2.14863830.chunk.js.map": "/static/js/2.14863830.chunk.js.map",
-    "static/js/3.bbd01536.chunk.js": "/static/js/3.bbd01536.chunk.js",
-    "static/js/3.bbd01536.chunk.js.map": "/static/js/3.bbd01536.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.2a448a7d.chunk.css.map": "/static/css/main.2a448a7d.chunk.css.map",
-    "static/js/2.14863830.chunk.js.LICENSE.txt": "/static/js/2.14863830.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/static/media/background.fb63479d.gif",
-    "static/media/darth-vader.defc5378.png": "/static/media/darth-vader.defc5378.png"
+    "main.css": "/swlibrary/static/css/main.9d907634.chunk.css",
+    "main.js": "/swlibrary/static/js/main.bd629067.chunk.js",
+    "main.js.map": "/swlibrary/static/js/main.bd629067.chunk.js.map",
+    "runtime-main.js": "/swlibrary/static/js/runtime-main.46db8455.js",
+    "runtime-main.js.map": "/swlibrary/static/js/runtime-main.46db8455.js.map",
+    "static/js/2.14863830.chunk.js": "/swlibrary/static/js/2.14863830.chunk.js",
+    "static/js/2.14863830.chunk.js.map": "/swlibrary/static/js/2.14863830.chunk.js.map",
+    "static/js/3.bbd01536.chunk.js": "/swlibrary/static/js/3.bbd01536.chunk.js",
+    "static/js/3.bbd01536.chunk.js.map": "/swlibrary/static/js/3.bbd01536.chunk.js.map",
+    "index.html": "/swlibrary/index.html",
+    "static/css/main.9d907634.chunk.css.map": "/swlibrary/static/css/main.9d907634.chunk.css.map",
+    "static/js/2.14863830.chunk.js.LICENSE.txt": "/swlibrary/static/js/2.14863830.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/swlibrary/static/media/background.fb63479d.gif",
+    "static/media/darth-vader.defc5378.png": "/swlibrary/static/media/darth-vader.defc5378.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.76220c52.js",
+    "static/js/runtime-main.46db8455.js",
     "static/js/2.14863830.chunk.js",
-    "static/css/main.2a448a7d.chunk.css",
-    "static/js/main.52154349.chunk.js"
+    "static/css/main.9d907634.chunk.css",
+    "static/js/main.bd629067.chunk.js"
   ]
 }

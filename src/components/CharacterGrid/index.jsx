@@ -9,7 +9,7 @@ const CharacterGrid = ({ characters, loading }) => {
         <section className="character-grid">
             { 
                 loading  ? (<Spinner />)
-                : characters ? characters.map( (ch, key) => (<CharacterItem key={key} character={ch} />)  ) 
+                    : characters.length > 0 ? characters.map( (ch, key) => (<CharacterItem key={key} character={ch} />)  ) 
                 : (<p className="empty-message">Nenhum personagem encontrado</p>)
 
             }

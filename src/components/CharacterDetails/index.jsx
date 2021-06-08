@@ -12,10 +12,18 @@ const CharacterDetails = ({ character  }) => {
         return `${splitted[2]}/${splitted[1]}/${splitted[0]}`
     }
 
+    const translateBirthYear = year => {
+        switch( year ) {
+            case 'unknown': return "Desconhecido";
+            default: return year;
+        }
+    }
+
     const translateGender = gender => {
         switch(gender) {
             case 'male': return 'Masculino';
             case 'female': return 'Feminino';
+            case 'unknown': return "Desconhecido";
             default: return gender;
         }
     }
@@ -52,7 +60,7 @@ const CharacterDetails = ({ character  }) => {
                 <div className="information-table">
                     <div className="information-table-row">
                         <p className="row-header">Ano de Nascimento</p>
-                        <p className="row-data">{character.birth_year}</p>
+                        <p className="row-data">{translateBirthYear(character.birth_year)}</p>
                     </div>
                     <div className="information-table-row">
                         <p className="row-header">Gênero</p>
